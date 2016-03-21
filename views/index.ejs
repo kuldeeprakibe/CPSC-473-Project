@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="">
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo head-logo">LATENT.ME</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse head-logo"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="modal-trigger waves-effect waves-light btn" href="#modal_login">Login</a></li>
+                <li><a class="modal-trigger waves-effect waves-light btn" href="#modal_signup">Sign Up</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <br>
+                <li><a class="modal-trigger waves-effect waves-light btn" href="#modal_login">Login</a></li>
+                <br>
+                <li><a class="modal-trigger waves-effect waves-light btn" href="#modal_signup">Sign Up</a></li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- Modal Structure -->
+        <div id="modal_login" class="modal">
+            <div align="center" class="modal-content">
+              <div class="row">
+                <form class="col l12 m12 s12" action="/login" method="post">
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Userame" id="username" type="text" class="validate" name="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input placeholder="Password" id="password" type="password" class="validate" name="password">
+                    </div>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn" type="submit" href="/login">Login</a>
+                    </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <div id="modal_signup" class="modal">
+            <div align="center" class="modal-content">
+              <div class="row">
+                <form class="col l12 m12 s12" action="/signup" method="post">
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Userame" id="username" type="text" class="validate" name="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input placeholder="Password" id="password" type="password" class="validate" name="password">
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input placeholder="Confirm Password" id="password" type="password" class="validate">
+                    </div>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn" type="submit" href="/signup">Sign Up</a>
+                    </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="#about">About</a></li>
+                <li class="tab col s3"><a href="#skills">Skills</a></li>
+                <li class="tab col s3"><a href="#projects">Projects</a></li>
+                <li class="tab col s3"><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div id="about" class="row card-panel content-div">
+            <div class="col l4 m12 s12">
+                <h3>About Me</h3>
+                <p>
+                    
+                </p>
+            </div>
+            <div class="col l4 m12 s12">
+                <img class="materialboxed z-depth-1" id="user-image" src="images/person.jpg" />
+            </div>
+            <div class="col l4 m12 s12">
+                <h3 class="about-subtitle">Personal</h3>
+                <h5><span>Name :</span><br></h5>
+                <h5><span>Age :</span> </h5>
+                <h5><span>Phone :</span> </h5>
+                <h5><span>Email :</span><br></h5>
+                <h5><span>Password :</span> <p></p></h5>
+            </div>
+        </div>
+        <div id="skills" class="row card-panel content-div">
+            <div class="col l5 m12 s12">
+                <p>
+
+                </p>
+            </div>
+            <div class="col l7 m12 s12">
+                <ul class="collapsible-popout" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"><p</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><p></p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><p></p></div>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div id="projects" class="row card-panel content-div">
+            <div class="col l4 m8 s12">
+                <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <h2 class="left-align card-title-top">Software Engg. Project</h2>
+                    <div class="card-img-wrap">
+                      <img class="activator" src="images/ghost_rider.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col l4 m8 s12">
+                <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <h2 class="left-align card-title-top">Software Engg. Project</h2>
+                    <div class="card-img-wrap">
+                      <img class="activator" src="images/ghost_rider.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col l4 m8 s12">
+                <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <h2 class="left-align card-title-top">Software Engg. Project</h2>
+                    <div class="card-img-wrap">
+                      <img class="activator" src="images/ghost_rider.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="row card-panel content-div">
+            <div class="row" align="center">
+                <form class="col l6 m12 s12 offset-l3">
+                    <h4>Please enter your contact information! :)</h4>
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Full Name" id="full_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">phone</i>
+                        <input placeholder="Phone Number" id="phone" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">mail</i>
+                        <input placeholder="E-mail" id="email" type="email" class="validate">
+                    </div>
+                    <div align="center">
+                        <a class="waves-effect waves-light btn" type="submit">Submit</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div align="center">
+                <p>&copy; 2016 Latent.me Inc.</p>
+            </div>
+        </footer>
+
+    </div><!--END OF CONTAINER -->
+
+</body>
+<!-- IMPORT JAVASCRIPTS -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/main.js"></script>
+</html>

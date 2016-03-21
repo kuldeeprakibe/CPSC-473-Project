@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+	<h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+	<% if (message.length > 0) { %>
+		<div class="alert alert-danger"><%= message %></div>
+	<% } %>
+
+	<!-- LOGIN FORM -->
+	<form action="/signup" method="post">
+
+		<div class="form-group">
+				<p><h3>Please tell us your name!</h3></p>
+				<label>First Name:</label></br>
+				<input type="text" name="firtname"/></br>
+				<label>Last Name:</label></br>
+				<input type="text" name="lastname"/>
+		</div>
+		<div class="form-group">
+					<p><h3>
+						Add your photo! </h3></p>
+						<input type="file" name="datafile" size="40">
+
+						<input type="submit" value="Attach">
+		</div>
+		<div class="form-group">
+				<p><h3>Where do you live?</h3></p>
+				<label>Street:</label></br>
+				<input type="text" name="street"/></br>
+				<label>City:</label></br>
+				<input type="text" name="city"/></br>
+				<label>State:</label></br>
+				<input type="text" name="state"/></br>
+				<label>Zip:</label></br>
+				<input type="text" name="zip"/></br>
+		</div>
+		<div class="form-group">
+				<p><h3>What do you love?</h3></p>
+
+					<input type="checkbox" name="interests" value="Technology"> Technology</br>
+					<input type="checkbox" name="interests" value="Design" checked> Design</br>
+					<input type="checkbox" name="interests" value="Movies"> Movies</br>
+					<input type="checkbox" name="interests" value="Music" checked> Music</br>
+					<input type="checkbox" name="interests" value="Cycling"> Cycling</br>
+					<input type="checkbox" name="interests" value="Food" checked> Food</br>
+
+
+		</div>
+
+		<div class="form-group">
+		<p><h3>What do you want your page to be?</h3></p>
+
+			<input type="radio" name="interests" value="rmb"> Read my blog</br>
+			<input type="radio" name="interests" value="hire" checked> Hire</br>
+			<input type="radio" name="interests" value="ram"> Read about me</br>
+			<input type="radio" name="interests" value="vmp" checked> View my portfolio</br>
+
+		</div>
+		<div>
+				<p></p>
+				<label>New Username:</label></br>
+				<input type="text" name="username"/></br>
+				<label>New Password:</label><br>
+				<input type="password" name="password"/></br>
+				<label>Re-enter Password:</label><br>
+				<input type="password" name="re-enter_password"/></br>
+			<label>Email</label>
+			<input type="text" class="form-control" name="email"></br>
+
+		</div>
+
+		<button type="submit" class="btn btn-warning btn-lg">Signup</button>
+	</form>
+
+	<hr>
+
+	<p>Already have an account? <a href="/login">Login</a></p>
+	<p>Or go <a href="/">home</a>.</p>
+
+	<div class="text-center">
+
+	</div>
+
+</div>
+</div>
+</body>
+</html>
